@@ -4,7 +4,6 @@ import { buttonTheme } from './button_theme'
 import { selectTheme } from './select_theme'
 const customTheme = extendTheme({
   initialColorMode: 'dark',
-  useSystemColorMode: true,
   components: {
     Switch: switchTheme,
     Button: buttonTheme,
