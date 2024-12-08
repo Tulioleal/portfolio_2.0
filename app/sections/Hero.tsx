@@ -1,8 +1,5 @@
-import { Box, Flex, Heading, Button, Icon } from '@chakra-ui/react';
+import { Box, Flex, Heading } from '@chakra-ui/react';
 import LetteringBackground from '../components/LetteringBackground';
-import Image from 'next/image';
-import Github from "@/public/Github.svg"
-import LinkedIn from "@/public/LinkedIn.svg"
 import { h1, h2 } from '../themes/text_theme';
 import { ImGithub } from "@react-icons/all-files/im/ImGithub";
 import { ImLinkedin } from "@react-icons/all-files/im/ImLinkedin";
@@ -15,6 +12,7 @@ const Hero = () => {
       bg="grey.default"
       color="white"
       height="100vh"
+      maxW="100vw"
       position="relative"
     >
       <LetteringBackground/>
@@ -26,6 +24,7 @@ const Hero = () => {
         alignContent="center"
         flexDir="column"
         height="100%"
+        maxW="100vw"
       >
         <Heading {...h1} zIndex={2}>
           TULIO LEAL
