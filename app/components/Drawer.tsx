@@ -19,7 +19,7 @@ import { HamburgerIcon } from "@chakra-ui/icons"
 
 export default function CustomDrawer() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const btnRef = useRef<any>(null)
+  const btnRef = useRef<HTMLButtonElement>(document.createElement("button"))
 
   return (
     <Box>
