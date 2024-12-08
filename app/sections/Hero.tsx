@@ -40,10 +40,10 @@ const Hero = () => {
           gap={8}
           pt={8}
         >
-          <Link href="https://github.com/Tulioleal" target='_blank'>
+          <Link href="https://www.linkedin.com/in/tulioleal/" target='_blank'>
             <ImGithub fontSize={"55px"} color='#ffd369'/>
           </Link>
-          <Link href="https://www.linkedin.com/in/tulioleal/" target='_blank'>
+          <Link href="https://github.com/Tulioleal" target='_blank'>
             <ImLinkedin fontSize={"55px"} color='#ffd369'/>
           </Link>
         </Box>
