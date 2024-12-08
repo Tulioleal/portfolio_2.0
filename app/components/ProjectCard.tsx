@@ -47,7 +47,7 @@ const ProjectCard = ({
     <CardFooter color="yellow.default">
       <ButtonGroup spacing='2'>
         {
-          links.repo ?
+          links.repo != undefined ?
             <Link href={links.repo}>
               Repo
             </Link> : <></>
