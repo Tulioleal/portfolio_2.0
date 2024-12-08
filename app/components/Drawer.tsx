@@ -5,11 +5,9 @@ import {
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   Flex,
-  Select,
   Text,
   useDisclosure
 }

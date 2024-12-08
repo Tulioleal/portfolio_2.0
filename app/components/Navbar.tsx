@@ -19,8 +19,8 @@ const Navbar: React.FC = () => (
   >
     <Flex
       justifyContent={{ base: 'space-between', md: 'space-around' }}
-      alignItems={'center'}
-      alignContent={"center"}
+      alignItems='center'
+      alignContent='center'
     >
       <Box>
         <Link href="/">
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => (
         </Link>
       </Box>
       <Flex
-        alignItems={'center'}
+        alignItems='center'
         gap={6}
         display={{ base: 'none', md: 'flex' }}
       >
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => (
           <Button variant="primary">Resume</Button>
         </Link>
       </Flex>
-      <Flex alignItems={'center'} gap={4}>
+      <Flex alignItems='center' gap={4}>
         <ToggleModeButton />
         <CustomDrawer />
         <LangSelect/>
