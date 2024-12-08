@@ -12,7 +12,7 @@ const LetteringBackground: React.FC = () => {
       position="absolute"
       zIndex={0}
       maxH="98.3vh"
-      maxW="100%"
+      maxW="100vw"
       pointerEvents="none"
     >
       <Box
