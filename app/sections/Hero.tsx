@@ -1,12 +1,8 @@
-import { Box, Flex, Heading, Button, Icon } from '@chakra-ui/react';
+import { Box, Flex, Heading, Button } from '@chakra-ui/react';
 import LetteringBackground from '../components/LetteringBackground';
 import Image from 'next/image';
 import Github from "@/public/Github.svg"
 import LinkedIn from "@/public/LinkedIn.svg"
-import { h1, h2 } from '../themes/text_theme';
-import { ImGithub } from "@react-icons/all-files/im/ImGithub";
-import { ImLinkedin } from "@react-icons/all-files/im/ImLinkedin";
-import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -15,7 +11,6 @@ const Hero = () => {
       bg="grey.default"
       color="white"
       height="100vh"
-      position="relative"
     >
       <LetteringBackground/>
       <Flex
@@ -27,25 +22,55 @@ const Hero = () => {
         flexDir="column"
         height="100%"
       >
-        <Heading {...h1} zIndex={2}>
+        <Heading
+          as="h1"
+          color="yellow.default"
+          width="100%"
+          zIndex={5}
+          fontSize={{
+            base: "50px",
+            sm: "70px",
+            md: "80px",
+            lg: "100px",
+            xl: "120px",
+          }}
+        >
           TULIO LEAL
         </Heading>
-        <Heading {...h2} zIndex={2}>
+        <Heading
+          as="h2"
+          color="yellow.default"
+          width="100%"
+          zIndex={5}
+          fontSize={{
+            base: "30px",
+            sm: "40px",
+            md: "50px",
+            lg: "60px",
+            xl: "70px",
+          }}
+        >
           WEB DEVELOPER
         </Heading>
         <Box
-          zIndex={2}
-          display="flex"
-          justifyContent="center"
+          zIndex={5}
+          display={"flex"}
+          justifyContent={"center"}
           gap={8}
           pt={8}
         >
-          <Link href="https://www.linkedin.com/in/tulioleal/" target='_blank'>
-            <ImGithub fontSize={"55px"} color='#ffd369'/>
-          </Link>
-          <Link href="https://github.com/Tulioleal" target='_blank'>
-            <ImLinkedin fontSize={"55px"} color='#ffd369'/>
-          </Link>
+          <Image
+            src={Github}
+            alt="Github"
+            width={50}
+            height={50}
+          />
+          <Image
+            src={LinkedIn}
+            alt="LinkedIn"
+            width={50}
+            height={50}
+          />
         </Box>
       </Flex>
     </Box>
