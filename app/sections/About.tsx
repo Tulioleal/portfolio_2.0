@@ -11,7 +11,7 @@ const About = () => {
       display={"block"}
       border={"none"}
       w="100%"
-      overflow={"hidden"}
+      p={5}
       py={20}
       background={ colorMode === 'light' ? "grey.light" : "blue.default" }
     >
