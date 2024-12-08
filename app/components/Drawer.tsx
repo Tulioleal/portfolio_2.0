@@ -13,18 +13,15 @@ import {
 }
 from "@chakra-ui/react"
 import Link from "next/link"
-import { useRef } from "react"
 import LangSelect from "./LangSelect"
 import { HamburgerIcon } from "@chakra-ui/icons"
 
 export default function CustomDrawer() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const btnRef = useRef<HTMLButtonElement>(document.createElement("button"))
 
   return (
     <Box>
       <Button
-        ref={btnRef}
         onClick={onOpen}
         display={{ base: 'flex', md: 'none' }}
         variant="primary"
@@ -33,7 +30,6 @@ export default function CustomDrawer() {
       <Drawer
         isOpen={isOpen}
         onClose={onClose}
-        finalFocusRef={btnRef}
         placement="top"
         size="xs"
       >
