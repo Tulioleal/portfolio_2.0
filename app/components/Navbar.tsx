@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Flex, Button} from '@chakra-ui/react';
-// import ToggleModeButton from './ToggleModeButton';
+import ToggleModeButton from './ToggleModeButton';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from "@/public/logo.png"
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => (
         </Link>
       </Flex>
       <Flex alignItems='center' gap={4}>
-        {/* <ToggleModeButton /> */}
+        <ToggleModeButton />
         <CustomDrawer />
         <LangSelect/>
       </Flex>

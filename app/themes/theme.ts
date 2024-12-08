@@ -2,7 +2,6 @@ import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
 import { switchTheme } from './switch_theme'
 import { buttonTheme } from './button_theme'
 import { selectTheme } from './select_theme'
-
 const customTheme: ThemeConfig = extendTheme({
   initialColorMode: "dark",
   colors: {

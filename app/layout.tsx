@@ -2,7 +2,6 @@
 
 import { Providers } from './providers'
 import Navbar from './components/Navbar'
-import { DarkMode } from '@chakra-ui/react'
 
 export default function RootLayout({
   children,
@@ -13,10 +12,8 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning>
       <body>
         <Providers>
-          <DarkMode>
-            <Navbar />
-            {children}
-          </DarkMode>
+          <Navbar />
+          {children}
         </Providers>
       </body>
     </html>
