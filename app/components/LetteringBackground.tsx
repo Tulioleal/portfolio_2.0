@@ -29,7 +29,7 @@ const LetteringBackground: React.FC = () => {
           zIndex={1}
           background={
             colorMode === 'light' ?
-              "linear-gradient(to top, #636D7Dff, #ffffff00)" :
+              "linear-gradient(to top, #F3F3F3ff, #ffffff00)" :
               "linear-gradient(to top, #222831ff, #ffffff00)"
           }
         />
