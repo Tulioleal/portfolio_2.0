@@ -1,4 +1,4 @@
-import { HeadingProps, TextProps } from "@chakra-ui/react"
+import { HeadingProps } from "@chakra-ui/react"
 
 const h1: HeadingProps = {
   as: "h1",

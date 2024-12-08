@@ -1,5 +1,5 @@
-import { Box, ButtonGroup, Card, CardBody, CardFooter, CardHeader, Divider, Grid, Heading, Image, Stack } from '@chakra-ui/react';
-import { h3, h4 } from '../themes/components/heading_theme';
+import { ButtonGroup, Card, CardBody, CardFooter, Divider, Heading, Image, Stack } from '@chakra-ui/react';
+import { h4 } from '../themes/components/heading_theme';
 import Link from 'next/link';
 import CustomParagraph from './CustomParagraph';
 
@@ -26,7 +26,8 @@ const ProjectCard = ({
     <CardBody>
       <Link href={links.url}>
         <Image
-          {...image}
+          src={image.src}
+          alt={image.alt}
           borderRadius='lg'
           width={430}
           height={285}
