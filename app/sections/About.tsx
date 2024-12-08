@@ -23,7 +23,7 @@ const About = () => {
           {...p}
           fontSize={SIZES}
         >
-          I'm a Venezuelan Software Engineer living in Buenos Aires since 2019, in early 2020 my journey as a web developer began, from that day on, i've never stopped learning.
+          I&apos;m a Venezuelan Software Engineer living in Buenos Aires since 2019, in early 2020 my journey as a web developer began, from that day on, i&apos;ve never stopped learning.
         </Text>
         <Text {...p} fontSize={SIZES}>
           I love simple, clean and effective UI.
