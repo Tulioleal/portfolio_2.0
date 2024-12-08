@@ -31,7 +31,7 @@ const h2: HeadingProps = {
 const p: TextProps = {
   as: "p",
   textAlign: "center",
-  color: "text.default",
+  color: "grey.light",
 }
 
 export {
