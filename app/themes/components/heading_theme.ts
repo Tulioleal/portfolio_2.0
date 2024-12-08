@@ -28,14 +28,39 @@ const h2: HeadingProps = {
   },
 }
 
-const p: TextProps = {
-  as: "p",
+const h3: HeadingProps = {
+  as: "h3",
+  color: "yellow.default",
+  width: "100%",
   textAlign: "center",
-  color: "grey.light",
+  textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+  fontSize: {
+    base: "25px",
+    sm: "30px",
+    md: "30px",
+    lg: "40px",
+    xl: "50px",
+  },
+}
+
+const h4: HeadingProps = {
+  as: "h4",
+  color: "yellow.default",
+  width: "100%",
+  textAlign: "center",
+  textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+  fontSize: {
+    base: "20px",
+    sm: "25px",
+    md: "25px",
+    lg: "30px",
+    xl: "40px",
+  },
 }
 
 export {
   h1,
   h2,
-  p
+  h3,
+  h4
 }
