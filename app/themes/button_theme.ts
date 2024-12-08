@@ -1,7 +1,7 @@
 import { buttonAnatomy } from '@chakra-ui/anatomy'
 import { createMultiStyleConfigHelpers, defineStyleConfig } from '@chakra-ui/react'
 
-const { definePartsStyle } =
+const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(buttonAnatomy.keys)
 
 const baseStyle = definePartsStyle({

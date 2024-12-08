@@ -5,23 +5,28 @@ import {
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
+  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   Flex,
+  Select,
   Text,
   useDisclosure
 }
 from "@chakra-ui/react"
 import Link from "next/link"
+import { useRef } from "react"
 import LangSelect from "./LangSelect"
 import { HamburgerIcon } from "@chakra-ui/icons"
 
 export default function CustomDrawer() {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const btnRef = useRef<any>(null)
 
   return (
     <Box>
       <Button
+        ref={btnRef}
         onClick={onOpen}
         display={{ base: 'flex', md: 'none' }}
         variant="primary"
@@ -30,6 +35,7 @@ export default function CustomDrawer() {
       <Drawer
         isOpen={isOpen}
         onClose={onClose}
+        finalFocusRef={btnRef}
         placement="top"
         size="xs"
       >

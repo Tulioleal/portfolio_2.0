@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Flex, Button} from '@chakra-ui/react';
-// import ToggleModeButton from './ToggleModeButton';
+import ToggleModeButton from './ToggleModeButton';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from "@/public/logo.png"
@@ -19,8 +19,8 @@ const Navbar: React.FC = () => (
   >
     <Flex
       justifyContent={{ base: 'space-between', md: 'space-around' }}
-      alignItems='center'
-      alignContent='center'
+      alignItems={'center'}
+      alignContent={"center"}
     >
       <Box>
         <Link href="/">
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => (
         </Link>
       </Box>
       <Flex
-        alignItems='center'
+        alignItems={'center'}
         gap={6}
         display={{ base: 'none', md: 'flex' }}
       >
@@ -45,8 +45,8 @@ const Navbar: React.FC = () => (
           <Button variant="primary">Resume</Button>
         </Link>
       </Flex>
-      <Flex alignItems='center' gap={4}>
-        {/* <ToggleModeButton /> */}
+      <Flex alignItems={'center'} gap={4}>
+        <ToggleModeButton />
         <CustomDrawer />
         <LangSelect/>
       </Flex>

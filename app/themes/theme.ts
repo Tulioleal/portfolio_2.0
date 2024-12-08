@@ -1,10 +1,15 @@
-import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
+import { Button, extendTheme, Select, type ThemeConfig } from '@chakra-ui/react'
 import { switchTheme } from './switch_theme'
 import { buttonTheme } from './button_theme'
 import { selectTheme } from './select_theme'
-
-const customTheme: ThemeConfig = extendTheme({
-  initialColorMode: "dark",
+const customTheme = extendTheme({
+  initialColorMode: 'dark',
+  useSystemColorMode: true,
+  components: {
+    Switch: switchTheme,
+    Button: buttonTheme,
+    Select: selectTheme
+  },
   colors: {
     "blue": {
       "light": "#30475e",
@@ -42,20 +47,14 @@ const customTheme: ThemeConfig = extendTheme({
         _dark: 'yellow.default',
       },
       text: {
-        default: 'grey.light',
+        default: 'blue.default',
         _dark: 'grey.light',
       }
     },
   },
   fonts: {
     heading: `'Roboto', sans-serif`,
-    body: `'Roboto', sans-serif`,
   },
-  components: {
-    Switch: switchTheme,
-    Button: buttonTheme,
-    Select: selectTheme
-  }
 })
 
 export default customTheme
