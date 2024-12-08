@@ -1,4 +1,4 @@
-import { Box, Stack, useColorMode } from '@chakra-ui/react';
+import { Box, Stack } from '@chakra-ui/react';
 import CustomParagraph from '../components/CustomParagraph';
 
 const About = () => (
