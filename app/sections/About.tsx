@@ -1,5 +1,5 @@
 import { Box, Stack } from '@chakra-ui/react';
-import CustomParagraph from '../components/CustomParagraph';
+import {CustomParagraph} from '../components/index';
 import { SectionProps } from '../[lng]/page';
 
 const About = ({t}:SectionProps) => (
