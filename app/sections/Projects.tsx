@@ -4,6 +4,7 @@ import ProjectCard, { ProjectRaw } from '../components/ProjectCard';
 import CS_courses from '@/public/CS_courses.png';
 import CS_olympiad from '@/public/CS_olympiad.png';
 import CS_website from '@/public/CS_website.png';
+import CS_app from '@/public/CS_app.png';
 import Nggamdu from '@/public/Nggamdu.png';
 import { SectionProps } from '../[lng]/page';
 
@@ -28,6 +29,13 @@ const PROJECTS:ProjectRaw[] = [
     image: CS_website,
     links: {
       url: "https://climatescience.org/"
+    }
+  },
+  {
+    title: "cs-app",
+    image: CS_app,
+    links: {
+      url: "https://play.google.com/store/apps/details?id=org.climatescience.cs_flutter_app"
     }
   },
   {

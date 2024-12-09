@@ -15,7 +15,7 @@
   "projects-content": {
     "cs-courses": {
       "title": "ClimateScience - Cursos",
-      "description": "Una plataforma que ofrece cursos gratuitos sobre cambio climático, con el objetivo de educar a las personas sobre el tema."
+      "description": "La única aplicación de educación climática del mundo. Explora nuestros interactivos, divertidos cursos y quizzes diseñados para ser y fáciles de entender, incluso para quienes no tienen experiencia en ciencias."
     },
     "cs-olympiad": {
       "title": "ClimateScience - Olimpiadas",
@@ -24,6 +24,10 @@
     "cs-website": {
       "title": "ClimateScience - Sitio web",
       "description": "Una plataforma que ofrece educación gratuita, con el objetivo de ayudar a la lucha contra el cambio climático. Más de 1.000.000 usuarios alcanzados."
+    },
+    "cs-app": {
+      "title": "ClimateScience - App",
+      "description": "Una aplicación que ofrece educación gratuita, con el objetivo de ayudar a la lucha contra el cambio climático a través de cursos y cuestionarios."
     },
     "nggamdu": {
       "title": "Nggam du",
