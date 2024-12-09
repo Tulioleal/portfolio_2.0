@@ -7,6 +7,7 @@ import LangSelect from './LangSelect';
 import CustomDrawer from './Drawer';
 import { SectionProps } from '../[lng]/page';
 
+
 const Navbar =  ({t}:SectionProps) => (
   <Box
     as="nav"
@@ -47,11 +48,11 @@ const Navbar =  ({t}:SectionProps) => (
             {t("contact")}
           </Button>
         </Link>
-        <Link href="/resume" target='_blank'>
+        <a href="/tuliolealresume.pdf" download>
           <Button variant="primary">
-            {t("resume")}
+            {t('resume')}
           </Button>
-        </Link>
+        </a>
       </Flex>
       <Flex alignItems='center' gap={4}>
         {/* <ToggleModeButton /> */}

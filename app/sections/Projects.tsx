@@ -1,6 +1,6 @@
 import { Box, Grid, Heading } from '@chakra-ui/react';
 import { h3 } from '../themes/components/heading_theme';
-import ProjectCard, { Project } from '../components/ProjectCard';
+import ProjectCard, { Project, ProjectRaw } from '../components/ProjectCard';
 import CS_courses from '@/public/CS_courses.png';
 import CS_olympiad from '@/public/CS_olympiad.png';
 import CS_website from '@/public/CS_website.png';
@@ -8,47 +8,31 @@ import Nggamdu from '@/public/Nggamdu.png';
 import { SectionProps } from '../[lng]/page';
 
 
-const PROJECTS:Project[] = [
+const PROJECTS:ProjectRaw[] = [
   {
     title: "cs-courses",
-    description: "",
-    image: {
-      src: CS_courses,
-      alt: "ClimateScience Courses screenshot."
-    },
+    image: CS_courses,
     links: {
       url: "https://climatescience.org/new-courses"
     }
   },
   {
     title: "cs-olympiad",
-    description: "",
-    image: {
-      src: CS_olympiad,
-      alt: "ClimateScience Olympiad screenshot."
-    },
+    image: CS_olympiad,
     links: {
       url: "https://climatescience.org/olympiad"
     }
   },
   {
     title: "cs-website",
-    description: "",
-    image: {
-      src: CS_website,
-      alt: "ClimateScience Website screenshot."
-    },
+    image: CS_website,
     links: {
       url: "https://climatescience.org/"
     }
   },
   {
     title: "nggamdu",
-    description: "",
-    image: {
-      src: Nggamdu,
-      alt: "Nggamdu screenshot."
-    },
+    image: Nggamdu,
     links: {
       url: "https://google.com"
     }
@@ -74,7 +58,11 @@ const Projects = ({t}:SectionProps) => (
           sm: "repeat(1, 1fr)",
           md: "repeat(2, 1fr)"
         }}
-        gap={20}
+        gap={{
+          base: "5",
+          sm: "10",
+          md: "10",
+        }}
         placeItems="center"
         maxWidth={"1400px"}
         margin={"0 auto"}
@@ -86,7 +74,7 @@ const Projects = ({t}:SectionProps) => (
               title={t(`projects-content.${props.title}.title`)}
               description={t(`projects-content.${props.title}.description`)}
               image={{
-                src: props.image.src,
+                src: props.image,
                 alt: t(`projects-content.${props.title}.title`) + " screenshot"
               }}
               links={props.links} 

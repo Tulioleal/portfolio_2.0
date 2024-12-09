@@ -54,7 +54,7 @@ const h4: HeadingProps = {
     sm: "25px",
     md: "25px",
     lg: "30px",
-    xl: "40px",
+    xl: "35px",
   },
 }
 

@@ -39,7 +39,7 @@ const Contact = ({t}:SectionProps) => {
           <Text {...h2}           
             width={{
               base: "100%",
-              md: "500px"
+              md: "550px"
             }}
             as="h5"
             textAlign={"center"}
@@ -88,13 +88,18 @@ const Contact = ({t}:SectionProps) => {
           </Box>
         </Flex>
       </Box>
-      <Box as='footer' py={7} backgroundColor="grey.default">
+      <Box as='footer' py={7} px={1} backgroundColor="grey.default">
         <CustomParagraph
           width="100%"
           textAlign="center"
           color="blue.dark"
           fontWeight="semibold"
           letterSpacing="2px"
+          fontSize={{
+            base: "xs",
+            "sm": "sm",
+            md: "md"
+          }}
         > {t("copyright", {year: new Date().getFullYear()})}
         </CustomParagraph>
       </Box>
