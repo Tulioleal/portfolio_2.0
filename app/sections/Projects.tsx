@@ -1,6 +1,6 @@
 import { Box, Grid, Heading } from '@chakra-ui/react';
 import { h3 } from '../themes/components/heading_theme';
-import ProjectCard, { Project, ProjectRaw } from '../components/ProjectCard';
+import ProjectCard, { ProjectRaw } from '../components/ProjectCard';
 import CS_courses from '@/public/CS_courses.png';
 import CS_olympiad from '@/public/CS_olympiad.png';
 import CS_website from '@/public/CS_website.png';

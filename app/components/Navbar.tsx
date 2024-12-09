@@ -48,11 +48,11 @@ const Navbar =  ({t}:SectionProps) => (
             {t("contact")}
           </Button>
         </Link>
-        <a href="/tuliolealresume.pdf" download>
+        <Link href="https://www.canva.com/design/DAGX9gZ31S0/BQalvj0XVe6SyNrTGSsUVg/view?utm_content=DAGX9gZ31S0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbe8208925c" target='_blank'>
           <Button variant="primary">
-            {t('resume')}
+            {t("resume")}
           </Button>
-        </a>
+        </Link>
       </Flex>
       <Flex alignItems='center' gap={4}>
         {/* <ToggleModeButton /> */}

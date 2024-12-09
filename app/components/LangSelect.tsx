@@ -8,7 +8,7 @@ import { locale } from '../i18n/settings';
 const LangSelect = ({
   onMobile = false,
 }:{onMobile?:boolean}) => {
-  const [locale, setLocale] = useState<locale>(window.location.pathname.split('/')[1] || 'en');
+  const [locale, setLocale] = useState<locale>("en");
   const router = useRouter();
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -18,7 +18,11 @@ const LangSelect = ({
   };
 
   useEffect(() => {
-    setLocale(window.location.pathname.split('/')[1] || 'en');
+    setLocale(
+      location.pathname.split('/')[1] != undefined
+      ? location.pathname.split('/')[1]
+      : 'en'
+    );
   }, []);
 
   return (
