@@ -4,8 +4,13 @@ import { h1, h2 } from '../themes/components/heading_theme';
 import { ImGithub } from "@react-icons/all-files/im/ImGithub";
 import { ImLinkedin } from "@react-icons/all-files/im/ImLinkedin";
 import Link from 'next/link';
+import { SectionProps } from '../[lng]/page';
 
-const Hero = () => {
+const Hero = ({
+  t
+}:SectionProps) => {
+  const backgroundString = t("engineer-developer-coder").repeat(3);
+  
   return (
     <Box
       as="header"
@@ -15,7 +20,7 @@ const Hero = () => {
       maxW="100vw"
       position="relative"
     >
-      <LetteringBackground/>
+      <LetteringBackground backgroundString={backgroundString}/>
       <Flex
         mx="auto"
         textAlign="center"
@@ -27,10 +32,10 @@ const Hero = () => {
         maxW="100vw"
       >
         <Heading {...h1} zIndex={2}>
-          TULIO LEAL
+          {t("tulio-leal")}
         </Heading>
         <Heading {...h2} zIndex={2}>
-          WEB DEVELOPER
+          {t("web-developer")}
         </Heading>
         <Box
           zIndex={2}

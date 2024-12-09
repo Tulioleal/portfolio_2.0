@@ -1,7 +1,8 @@
 import { Box, Stack } from '@chakra-ui/react';
 import CustomParagraph from '../components/CustomParagraph';
+import { SectionProps } from '../[lng]/page';
 
-const About = () => (
+const About = ({t}:SectionProps) => (
   <Box
     as="section"
     id="about"
@@ -9,8 +10,10 @@ const About = () => (
     border={"none"}
     w="100%"
     overflow={"hidden"}
-    pt={"100px"}
-    pb="150px"
+    py={{
+      base: "10",
+      md: "20"
+    }}
     background="blue.default"
   >
     <Stack
@@ -19,13 +22,13 @@ const About = () => (
       maxW={["90%", "90%", "90%", "900px", "900px"]}
       >
       <CustomParagraph >
-        I&apos;m a Venezuelan Software Engineer living in Buenos Aires since 2019, in early 2020 my journey as a web developer began, from that day on, i&apos;ve never stopped learning.
+        {t("about-text.1")}
       </CustomParagraph>
       <CustomParagraph>
-        I love simple, clean and effective UI.
+        {t("about-text.2")}
       </CustomParagraph>
       <CustomParagraph>
-        Started learning about HTML, CSS and Javascript out of curiosity a and way to enter in the job market, but I discovered my passion in Web development.
+        {t("about-text.3")}
       </CustomParagraph>
     </Stack>
   </Box>
