@@ -17,6 +17,10 @@ export interface Project {
   };
 }
 
+export interface ProjectRaw extends Omit<Project, 'description' | 'image'> {
+  image: StaticImageData;
+}
+
 const ProjectCard = ({
   title,
   description,

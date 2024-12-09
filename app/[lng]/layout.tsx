@@ -1,7 +1,6 @@
 import { Providers } from '../providers'
 import { DarkMode } from '@chakra-ui/react'
 import { dir } from 'i18next'
-import { LayoutProps } from '@/.next/types/app/[lng]/page'
 
 const languages = ['en', 'es']
 
@@ -14,7 +13,12 @@ export default function RootLayout({
   params: {
     lng
   }
-}: {params:{lng:string}} & LayoutProps) {
+}: {
+  params:{
+    lng:string
+  },
+  children:React.ReactNode
+}) {
   return (
     <html lang={lng} dir={dir(lng)} suppressHydrationWarning>
       <body>
