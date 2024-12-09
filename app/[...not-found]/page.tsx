@@ -1,7 +1,8 @@
 // pages/404.tsx
+"use client"
+
 import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import NotFoundLayout from './layout';
+import { useRouter } from 'next/navigation';
 
 const NotFound = () => {
   const router = useRouter();
@@ -10,9 +11,7 @@ const NotFound = () => {
     router.replace('/');
   }, [router]);
 
-  return <NotFoundLayout>
-    <h1>404 - Page Not Found</h1>
-  </NotFoundLayout>
+  return <>Redirecting...</>;
 };
 
 export default NotFound;
