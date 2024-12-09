@@ -1,0 +1,42 @@
+{
+  "about": "About",
+  "contact": "Contact",
+  "projects": "Projects",
+  "resume": "Resume",
+  "tulio-leal": "Tulio Leal",
+  "web-developer": "Web developer",
+  "engineer-developer-coder": "ENGINEER • DEVELOPER • CODER • ",
+  "about-text": {
+    "1": "I'm a Venezuelan Software Engineer living in Buenos Aires since 2019, in early 2020 my journey as a web developer began, from that day on, I've never stopped learning.",
+    "2": "I love simple, clean and effective UI.",
+    "3": "I Started learning about HTML, CSS and Javascript out of curiosity a and way to enter in the job market, but I discovered my passion in Web development."
+  },
+  "recent-projects": "Recent projects",
+  "projects-content": {
+    "cs-courses": {
+      "title": "ClimateScience Courses",
+      "description": "A platform that offers free courses on climate change, with the aim of educating people on the topic."
+    },
+    "cs-olympiad": {
+      "title": "ClimateScience Olympiad",
+      "description": "An online competition that aims to demonstrate students' knowledge of climate change and its effects. We reached over 100.00 students in more than 100 countries."
+    },
+    "cs-website": {
+      "title": "ClimateScience Website",
+      "description": "A platform that offers free education, with the aim of helping the fight against climate change. Over 1.000.000 users reached."
+    },
+    "nggamdu": {
+      "title": "Nggam du",
+      "description": "Spider divination with somié, Cameroon. A project developed together with Thomas Saraceno's team, an Argentinian Artist in Berlin."
+    }
+  },
+  "contact-text": {
+    "1": "Let’s chat!",
+    "2": "Tell me about",
+    "3": "your project!"
+  },
+  "name": "Name",
+  "message": "Message",
+  "send": "Send",
+  "copyright": "Copyright © {{year}} | Tulio Leal. All rights reserved"
+}

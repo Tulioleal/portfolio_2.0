@@ -1,27 +1,39 @@
+"use client"
+
 import { Select } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import React, { useEffect, useState } from 'react';
+import { locale } from '../i18n/settings';
 
 const LangSelect = ({
   onMobile = false,
 }:{onMobile?:boolean}) => {
-  const [language, setLanguage] = useState<"en" | "es">("en");
-  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    if (event.target.value === "en" || event.target.value === "es") return
+  const [locale, setLocale] = useState<locale>("en");
+  const router = useRouter();
 
-    setLanguage(event.target.value as "en" | "es");
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = event.target.value;
+    setLocale(value);
+    router.push(`/${value}`);
   };
+
+  useEffect(() => {
+    setLocale(
+      location.pathname.split('/')[1] != undefined
+      ? location.pathname.split('/')[1]
+      : 'en'
+    );
+  }, []);
 
   return (
     <Select
       size="md"
-      defaultValue={language}
-      display={ onMobile ? "flex" : { base: 'none', md: 'flex' }}
+      value={locale}
+      display={onMobile ? "flex" : { base: 'none', md: 'flex' }}
       onChange={handleChange}
-      isRequired
-      >
-      <option value="" disabled>Languages</option>
+    >
       <option value="en">English</option>
-      <option value="es">Spanish</option>
+      <option value="es">Español</option>
     </Select>
   );
 };

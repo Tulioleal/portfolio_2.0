@@ -1,8 +1,7 @@
 import { Box, Text, useColorMode } from "@chakra-ui/react";
 
-const LetteringBackground: React.FC = () => {
-  const WORDS = "ENGINEER • DEVELOPER • CODER • ENGINEER • DEVELOPER • CODER •"
-  const NUMBER_OF_LINES = 50;
+const LetteringBackground = ({backgroundString}:{backgroundString:string}) => {
+  const NUMBER_OF_LINES = 30;
   const { colorMode } = useColorMode();
 
   return (
@@ -44,7 +43,7 @@ const LetteringBackground: React.FC = () => {
             fontSize={{
               base: "60px",
               md: "70px",
-              lg: "80px",
+              lg: "90px",
             }}
             lineHeight={{
               base: "70px",
@@ -53,9 +52,9 @@ const LetteringBackground: React.FC = () => {
             }}
             noOfLines={1}
             isTruncated
-            ml={Math.floor(Math.random() * 500) * -1}
+            ml={Math.floor(Math.random() * 1000) * -1}
             fontWeight={900}
-          > {WORDS}
+          > {backgroundString}
           </Text>
         ))
       }
