@@ -9,8 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
       alternates: {
         languages: {
-          es: 'https://tulioleal.info/es',
-          de: 'https://tulioleal.info/de',
+          es: 'https://tulioleal.info/en',
+          de: 'https://tulioleal.info/es',
         },
       },
     },
