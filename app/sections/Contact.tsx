@@ -1,7 +1,7 @@
 import { Box, Button, Flex, FormControl, FormLabel, Input, Text, Textarea, VStack } from '@chakra-ui/react';
 import { useState } from 'react';
 import { h2 } from '../themes/components/heading_theme';
-import CustomParagraph from '../components/CustomParagraph';
+import {CustomParagraph} from '../components/index';
 import { SectionProps } from '../[lng]/page';
 
 const Contact = ({t}:SectionProps) => {

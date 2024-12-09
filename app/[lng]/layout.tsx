@@ -2,7 +2,13 @@ import { Providers } from '../providers'
 import { DarkMode } from '@chakra-ui/react'
 import { dir } from 'i18next'
 import { ReactNode, Usable, use } from 'react';
+import type { Metadata } from 'next'
 
+export const metadata: Metadata = {
+  title: 'Tulio Leal | Web developer',
+  description: 'Tulio Leal is a skilled web developer specializing in modern web technologies. Explore his portfolio, projects, and contact information.'
+}
+ 
 export interface LayoutProps {
   params: Promise<{ lng: string }>
   children: ReactNode;

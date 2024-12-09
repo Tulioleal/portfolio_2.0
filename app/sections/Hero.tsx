@@ -1,5 +1,5 @@
 import { Box, Flex, Heading } from '@chakra-ui/react';
-import LetteringBackground from '../components/LetteringBackground';
+import { LetteringBackground } from '../components/index';
 import { h1, h2 } from '../themes/components/heading_theme';
 import { ImGithub } from "@react-icons/all-files/im/ImGithub";
 import { ImLinkedin } from "@react-icons/all-files/im/ImLinkedin";
