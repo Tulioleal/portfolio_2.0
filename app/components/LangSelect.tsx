@@ -1,14 +1,24 @@
+"use client"
+
 import { Select } from '@chakra-ui/react';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 
 const LangSelect = ({
   onMobile = false,
 }:{onMobile?:boolean}) => {
   const [language, setLanguage] = useState<"en" | "es">("en");
+  const router = useRouter();
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    if (event.target.value === "en" || event.target.value === "es") return
-
-    setLanguage(event.target.value as "en" | "es");
+    console.log(event.target.value);
+    if (event.target.value === "en") {
+      router.push("/en")
+      setLanguage("en");
+    }
+    if (event.target.value === "es") {
+      router.push("/es")
+      setLanguage("es");
+    }
   };
 
   return (
@@ -20,8 +30,8 @@ const LangSelect = ({
       isRequired
       >
       <option value="" disabled>Languages</option>
-      <option value="en">English</option>
-      <option value="es">Spanish</option>
+      <option value="en" selected={language == "en"}>English</option>
+      <option value="es" selected={language == "es"}>Español</option>
     </Select>
   );
 };

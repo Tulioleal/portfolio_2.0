@@ -1,0 +1,42 @@
+{
+  "about": "Acerca de",
+  "contact": "Contacto",
+  "projects": "Projectos",
+  "resume": "Curriculum",
+  "tulio-leal": "Tulio Leal",
+  "web-developer": "Desarrollador web",
+  "engineer-developer-coder": "INGENIERO • DESARROLLADOR • CODER • ",
+  "about-text": {
+    "1": "Soy un ingeniero de software venezolano que vive en Buenos Aires desde 2019, a principios de 2020 comenzó mi viaje como desarrollador web, desde ese día no he dejado de aprender.",
+    "2": "Me encantan las UI simple, limpia y efectiva.",
+    "3": "Comencé a aprender sobre HTML, CSS y Javascript por curiosidad y como una forma de ingresar al mercado laboral, pero descubrí mi pasión en el desarrollo web."
+  },
+  "recent-projects": "Proyectos recientes",
+  "projects-content": {
+    "cs-courses": {
+      "title": "ClimateScience - Cursos",
+      "description": "Una plataforma que ofrece cursos gratuitos sobre cambio climático, con el objetivo de educar a las personas sobre el tema."
+    },
+    "cs-olympiad": {
+      "title": "ClimateScience - Olimpiadas",
+      "description": "Una competencia en línea que tiene como objetivo demostrar el conocimiento de los estudiantes sobre el cambio climático y sus efectos. Llegamos a más de 100.00 estudiantes en más de 100 países."
+    },
+    "cs-website": {
+      "title": "ClimateScience - Sitio web",
+      "description": "Una plataforma que ofrece educación gratuita, con el objetivo de ayudar a la lucha contra el cambio climático. Más de 1.000.000 usuarios alcanzados."
+    },
+    "nggamdu": {
+      "title": "Nggamdu",
+      "description": "Adivinación de arañas con somié, Camerún. Un proyecto desarrollado junto al equipo de Thomas Saraceno, un artista argentino en Berlín."
+    }
+  },
+  "contact-text": {
+    "1": "Charlemos!",
+    "2": "DFIme mas sobre",
+    "3": "tu proyecto!"
+  },
+  "name": "Nombre",
+  "message": "Mensaje",
+  "send": "Enviar",
+  "copyright": "Copyright © {{year}} | Tulio Leal. Todos los derechos reservados"
+}
