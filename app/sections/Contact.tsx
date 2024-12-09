@@ -65,7 +65,7 @@ const Contact = ({t}:SectionProps) => {
           >
             <VStack spacing={4}>
               <FormControl id="name" isRequired>
-                <FormLabel>{t("name")}</FormLabel>
+                <FormLabel color="grey.light">{t("name")}</FormLabel>
                 <Input
                   type="text"
                   name="name"
@@ -74,7 +74,7 @@ const Contact = ({t}:SectionProps) => {
                 />
               </FormControl>
               <FormControl id="message" isRequired>
-                <FormLabel>{t("message")}</FormLabel>
+                <FormLabel color="grey.light">{t("message")}</FormLabel>
                 <Textarea
                   name="message"
                   value={formData.message}
