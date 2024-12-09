@@ -1,13 +1,17 @@
-'use client'
+"use client"
 
 import { Usable, use } from 'react'
 import { useTranslation } from '../i18n'
-import About from '../sections/About'
-import Contact from '../sections/Contact'
-import Hero from '../sections/Hero'
-import Projects from '../sections/Projects'
 import { TFunction } from 'i18next'
-import Navbar from '../components/Navbar'
+import {
+  Navbar
+} from '../components/index'
+import {
+  Hero,
+  About,
+  Projects,
+  Contact
+} from '../sections/index'
 
 export interface SectionProps {
   t: TFunction
