@@ -34,7 +34,7 @@ const PROJECTS:ProjectRaw[] = [
     title: "nggamdu",
     image: Nggamdu,
     links: {
-      url: "https://google.com"
+      url: "https://nggamdu.org/"
     }
   },
 ]
