@@ -72,8 +72,18 @@ export default function CustomDrawer() {
   )
 }
 
-const LinkTab = ({text, url, targetBlank}:{text:string, url:string, targetBlank?:boolean}) => (
-  <Link href={url} target={targetBlank ? "_blank" : ""}>
+const LinkTab = (
+  {
+    text,
+    url,
+    targetBlank
+  } : {
+    text:string,
+    url:string,
+    targetBlank?:boolean
+  }
+) => (
+  <Link href={url} target={targetBlank == true ? "_blank" : ""}>
     <Text color="accent" width={"100%"} padding="2">
       {text}
     </Text>
