@@ -39,7 +39,7 @@ export default function CustomDrawer() {
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerHeader>
-            <Text as={"h2"} fontSize={"30px"}>
+            <Text as={"h2"} fontSize={"30px"} color="yellow.default">
               Tulio Leal
             </Text>
           </DrawerHeader>
@@ -61,7 +61,8 @@ export default function CustomDrawer() {
               />
               <LinkTab
                 text="Resume"
-                url="/resume"
+                url="https://www.canva.com/design/DAGX9gZ31S0/BQalvj0XVe6SyNrTGSsUVg/view?utm_content=DAGX9gZ31S0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbe8208925c"
+                targetBlank
               />
             </Flex>
           </DrawerBody>
@@ -71,8 +72,8 @@ export default function CustomDrawer() {
   )
 }
 
-const LinkTab = ({text, url}:{text:string, url:string}) => (
-  <Link href={url}>
+const LinkTab = ({text, url, targetBlank}:{text:string, url:string, targetBlank?:boolean}) => (
+  <Link href={url} target={targetBlank ? "_blank" : ""}>
     <Text color="accent" width={"100%"} padding="2">
       {text}
     </Text>
