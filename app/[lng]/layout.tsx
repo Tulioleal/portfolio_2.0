@@ -3,6 +3,7 @@ import { DarkMode } from '@chakra-ui/react'
 import { dir } from 'i18next'
 import { ReactNode, Usable, use } from 'react';
 import type { Metadata } from 'next'
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: 'Tulio Leal | Web developer',
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Providers>
           <DarkMode>
             {children}
+            <Analytics />
           </DarkMode>
         </Providers>
       </body>
